@@ -1,0 +1,168 @@
+h1 {
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: Helvetica;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: Times;
+  font-size: 15px;
+}
+
+#zen-summary a:link {
+  text-decoration: none;
+  color: red;
+}
+
+#zen-summary a:visited {
+  text-decoration: none;
+}
+
+#zen-summary a:hover {
+  text-decoration: underline;
+}
+
+#zen-summary p {
+  font-style: italic;
+}
+
+.participation a:link {
+  text-decoration: none;
+  color: green;
+}
+
+.participation a:visited {
+  text-decoration: none;
+}
+
+.participation a:hover {
+  text-decoration: underline;
+}
+
+.participation p {
+  font-style: italic;
+}
+
+.requirements a:link {
+  text-decoration: none;
+  color: pink;
+}
+
+.requirements a:visited {
+  text-decoration: none;
+}
+
+.requirements a:hover {
+  text-decoration: underline;
+}
+
+.requirements p {
+  font-style: italic;
+}
+
+
+.design-selection ul {
+  list-style-type: square;
+}
+
+.design-archives ul {
+  list-style-type: upper-roman;
+}
+
+.zen-resources ul {
+  list-style-type: lower-alpha;
+}
+
+
+.design-selection a:link {
+  text-decoration: line-through;
+  color: purple;
+}
+
+.design-selection a:visited {
+  text-decoration: none;
+}
+
+.design-selection a:hover {
+  text-decoration: underline;
+}
+
+.zen-resources a:link {
+  text-decoration: underline overline;
+  color: grey;
+}
+
+.zen-resources a:visited {
+  text-decoration: none;
+}
+
+.zen-resources a:hover {
+  text-decoration: underline;
+}
+
+
+
+.benefits {
+  font-weight: bold;
+}
+
+.requirements p:last-child {
+  font-weight: bold;
+}
+
+.requirements p::first-line {
+  color: red;
+}
+
+body {
+  background-color: #D3DAE3
+
+}
+
+.requirements p::after {
+  content: 'This ia p::after';
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+footer li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+div > h3 {
+  text-shadow: 2px 2px #ff0000;
+}
+
+.intro:hover {
+  background: red;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+
+
+.design-selection {
+  display: grid;
+  grid-row-gap: 50px;
+}
+
+#design-archives {
+  border: 5px !important;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: black !important;
+  border-style: dashed;
+}
