@@ -1,17 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
+
+h2, h3, h4, h5, h6 {
+  color: #5b5b5b;
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  line-height: 1.75em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 h1 {
-  font-family: fantasy;
-  font-size: 50px;
+  font-weight: 900 !important;
 }
 
-h2 {
-  font-family: Helvetica;
-  font-size: 20px;
+header h2 {
+  color: #D5D1D5;
 }
 
-h3 {
-  font-family: Times;
-  font-size: 15px;
+header {
+  background-attachment: scroll,							scroll,					fixed;
+  background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+  background-position: bottom center,					top left,				center center;
+  background-repeat: repeat-x,						repeat,					no-repeat;
+  background-size: 3200px 460px,					auto,					cover;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10em 0 20em 0;
+  position: relative;
+  text-align: center;
+
+
 }
+
+header:before, header:after {
+  background: rgba(224, 224, 224, 0.75);
+  content: '';
+  left: 50%;
+  position: absolute;
+  width: 1px;
+  z-index: 0;
+}
+
+header:before {
+  height: calc(100% - 50px);
+  opacity: 0.15;
+  top: 0;
+}
+
+header:after {
+  bottom: 0;
+  height: 50px;
+}
+
+header strong, header b {
+  color: #ffffff;
+}
+
+p {
+  position: relative;
+  top: -1em;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  text-align: center;
+  }
+
+.intro.major {
+  border-bottom-width: 1px;
+  border-color: rgba(224, 224, 224, 0.75);
+  border-style: solid;
+  border-top-width: 1px;
+  margin-bottom: 6em;
+  padding: 4em 0;
+  position: relative;
+}
+
 
 #zen-summary a:link {
   text-decoration: none;
@@ -30,9 +93,26 @@ h3 {
   font-style: italic;
 }
 
+.zen-resources {
+  text-align: center;
+}
+
+.zen-resources a:link {
+  text-decoration: line-through;
+  color: #5b5b5b;
+}
+
+.zen-resources a:visited {
+  text-decoration: none;
+}
+
+.zen-resources a:hover {
+  text-decoration: underline;
+}
+
 .participation a:link {
   text-decoration: none;
-  color: green;
+  color: green !important;
 }
 
 .participation a:visited {
@@ -49,7 +129,7 @@ h3 {
 
 .requirements a:link {
   text-decoration: none;
-  color: pink;
+  color: red;
 }
 
 .requirements a:visited {
@@ -64,13 +144,36 @@ h3 {
   font-style: italic;
 }
 
+.design-selection {
+  text-align: center;
+}
+
 
 .design-selection ul {
   list-style-type: square;
 }
 
+.design-archives {
+  text-align: center;
+}
+
+.design-archives a:link {
+  text-decoration: none;
+  color: #5b5b5b;
+}
+
+.design-archives a:visited {
+  text-decoration: none;
+}
+
+.design-archives a:hover {
+  text-decoration: underline;
+}
+
+
 .design-archives ul {
   list-style-type: upper-roman;
+  color: #5b5b5b;
 }
 
 .zen-resources ul {
@@ -80,7 +183,7 @@ h3 {
 
 .design-selection a:link {
   text-decoration: line-through;
-  color: purple;
+  color: #5b5b5b;
 }
 
 .design-selection a:visited {
@@ -91,21 +194,6 @@ h3 {
   text-decoration: underline;
 }
 
-.zen-resources a:link {
-  text-decoration: underline overline;
-  color: grey;
-}
-
-.zen-resources a:visited {
-  text-decoration: none;
-}
-
-.zen-resources a:hover {
-  text-decoration: underline;
-}
-
-
-
 .benefits {
   font-weight: bold;
 }
@@ -114,12 +202,9 @@ h3 {
   font-weight: bold;
 }
 
-.requirements p::first-line {
-  color: red;
-}
-
 body {
-  background-color: #D3DAE3
+  background-color: #F8F8F8;
+  font-family: 'Source Sans Pro', sans-serif;
 
 }
 
@@ -142,21 +227,43 @@ footer li a {
   text-decoration: none;
 }
 
-
-div > h3 {
-  text-shadow: 2px 2px #ff0000;
+footer a:link {
+  text-decoration: underline overline;
+  color: #5b5b5b;
 }
 
-.intro:hover {
-  background: red;
-  -webkit-transition: width 2s; /* Safari */
-  transition: width 2s;
+footer a:visited {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+}
+
+
+.summary {
+  content: '<br>';
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  text-align: center;
+  width: 300px;
+  top:10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 15px;
+  margin: auto;
 }
 
 
 .design-selection {
   display: grid;
-  grid-row-gap: 50px;
+  grid-row-gap: 1px;
 }
 
 #design-archives {
@@ -165,4 +272,5 @@ div > h3 {
   border-radius: 10px;
   border-color: black !important;
   border-style: dashed;
+  color: #5b5b5b;
 }
